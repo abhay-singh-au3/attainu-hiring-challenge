@@ -19,18 +19,6 @@ function studentReducer(students = [], action) {
         })
         students = newData;
     }
-    if(action.type === "FILTER_GET_MALE") {
-        const newData = students.filter(obj => {
-            return obj[0].gender === "male";
-        })
-        students = newData;
-    }
-    if(action.type === "FILTER_GET_FEMALE") {
-        const newData = students.filter(obj => {
-            return obj[0].gender === "female";
-        })
-        students = newData;
-    }
     return students;
 }
 

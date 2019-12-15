@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import Students from './Students';
 import { store } from '../store/store';
 import { Provider } from 'react-redux';
@@ -9,7 +8,7 @@ class App extends React.Component {
         return (
             <Provider store={store}>
                 <div>
-                    <Header />
+                    {/* <Header /> */}
                     <Students />
                 </div>
             </Provider>
